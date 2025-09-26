@@ -8,7 +8,7 @@
 /* ------------------------------------ */
 
 /* The root element is where we create variables for our file */
-:root{
+:root {
     /* Basic Theme Colors */
     --red: #bf3636;
     --orange: #d04936;
@@ -531,7 +531,7 @@ input{
     select the h2 in the list styling section using the class name selector
 */
 /* ----- */
-.list-styling-secetion-h2 {
+.blue-text {
     color: var(--blue);
 }
 
@@ -541,7 +541,7 @@ input{
     select the unordered list in the list styling container using the id and tag name selectors
 */
 /* ----- */
-#list-styling-container ul{
+#list ul{
     display: block;
     width: fit-content;
     margin: 32px auto;
@@ -553,7 +553,7 @@ input{
     select all of the list items in the list styling container using the ID and tag name selectors
 */
 /* ----- */
-#list-styling-container li{
+#list li{
     font-size: 1.25rem;
     line-height: 1.35;
     margin-bottom: 8px;
@@ -566,7 +566,7 @@ input{
     select the bullets on the unordered list in the list styling section using the tag name and pseudo-class selectors
 */
 /* ----- */
-ul::marker{
+#list li::marker {
     font-size: 3rem;
     content: "\2730";
 }
@@ -577,7 +577,7 @@ ul::marker{
     select the first list item in the list styling container using the ID, tag name, and pseudo-class selectors
 */
 /* ----- */
-#list-styling-container li:first-child::marker{
+#list li:first-child::marker{
     color: var(--purple);
 }
 
@@ -587,7 +587,7 @@ ul::marker{
     select the last list item in the list styling container using the ID, tag name, and pseudo-class selectors
 */
 /* ----- */
-#list-styling-container li:last-child::marker{
+#list li:last-child::marker {
     color: var(--dv-lt-blue);
 }
 
@@ -600,7 +600,7 @@ ul::marker{
     select all of the divs in the more styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-#more-styling-section div{
+#more div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -612,7 +612,7 @@ ul::marker{
     select the first div in the more styling section using the ID, tag name and direct descendant selectors
   */
   /* ----- */
-#more-styling-section > div:first-child{
+#more > div {
     width: 300px;
     height: 300px;
     background-color: var(--dv-red);
@@ -625,7 +625,7 @@ ul::marker{
     select the second div in the more styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-#more-styling-section div:nth-child(2){
+#more > div > div {
     width: 250px;
     height: 250px;
     background-color: var(--dv-orange);
@@ -637,8 +637,8 @@ ul::marker{
     select the third div in the more styling section using the ID, descendant, and class name selectors
 */
 /* ----- */
-#more-styling-section div.third-div{
-    width: 200px;
+#more div.third {
+    width: 200px; 
     height: 200px;
     background-color: var(--dv-yellow);
 }
@@ -649,7 +649,7 @@ ul::marker{
     select the fourth div in the pseudo-class styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#pseudo-class-styling-section div .fourth-div{
+#more .fourth-div {
     width: 150px;
     height: 150px;
     background-color: var(--dv-mint);
@@ -661,7 +661,7 @@ ul::marker{
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#more-styling-section div.last-div{
+#more .last-div {
     width: 100px;
     height: 100px;
     background-color: var(--dv-lt-blue);
@@ -676,7 +676,10 @@ ul::marker{
     select the section with the ID of software by its ID 
 */
 /* ----- */
-#software{
+
+
+
+#software {
     margin-top: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -689,7 +692,7 @@ ul::marker{
     select the links in the software section using the ID, tag name, and child/descendant selector
 */
 /* ----- */
-#software a{
+#software a {
     width: 100px;
     height: auto;
     margin: 0 auto;
@@ -704,7 +707,7 @@ ul::marker{
     select the links in the software section on hover using the ID, tag name, child/descendant selector, and pseudo-class selector
 */
 /* ----- */
-#software a:hover{
+#software a:hover {
     background-color: var(--dk-gray);
     box-shadow: var(--box-shadow-sm);
 }
@@ -715,7 +718,7 @@ ul::marker{
     select the SVGs in the software section using the ID, tag name, and descendant selectors
 */
 /* ----- */
-#software svg{
+#software svg {
     stroke: var(--dk-gray);
 }
 
@@ -725,7 +728,7 @@ ul::marker{
     this code changes the color of the SVG stroke when the user hovers over the link they are inside of in the software section
 */
 /* ----- */
-#software a:hover svg{
+#software a:hover svg {
     stroke: var(--dv-lime);
 }
 
@@ -738,7 +741,7 @@ ul::marker{
     select the table in the table styles section using the element/tag name selector
 */
 /* ----- */
-table{ 
+table { 
     border-collapse: collapse;
     width: 100%;
 }
@@ -761,7 +764,7 @@ caption{
     select the table header cells in the table styles section using the element/tag name, descendant, and ID selectors
 */
 /* ----- */
-#table-styling-section th{ 
+#table th{ 
     background-color: var(--blue);
     color: var(--white);
 }
@@ -772,7 +775,7 @@ caption{
     select the odd table rows in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-#table-styling-section tbody tr:nth-child(odd) { 
+#table tbody tr:nth-child(odd) { 
     background-color: var(--dv-orange);
 }
 
@@ -782,7 +785,7 @@ caption{
     select the first column in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-#table-styling-section tbody td:first-child{ 
+#table tbody td:first-child { 
     font-weight: bold;
 }
 
@@ -792,7 +795,8 @@ caption{
     select the table heading cells (th) and the table data cells in the table styles section using the element/tag name and multiple element selectors
 */
 /* ----- */
-#table-styling-section th, #table-styling-section td{ 
+#table th, 
+#table td { 
     border: 1px solid var(--dk-gray);
     padding: 4px;
 }
@@ -803,7 +807,7 @@ caption{
     select the table footer in the table styles section using the element/tag name selector
 */
 /* ----- */
-#table-styling-section tfoot{ 
+#table tfoot { 
     font-weight: bold;
 }
 
@@ -816,7 +820,7 @@ caption{
     select all of the divs in the border styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-#border-styling-section div{
+#borders div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -828,7 +832,7 @@ caption{
     select the first div in the border styling section using the ID, tag name and direct descendant selectors
   */
   /* ----- */
-#border-styling-section > div:first-of-type{
+#borders > div:first-of-type {
     width: 300px;
     height: 300px;
     margin: 16px auto;
@@ -841,7 +845,7 @@ caption{
     select the second div in the border styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-#border-styling-section div:nth-of-type{
+#borders > div > div:nth-of-type(1){
     width: 250px;
     height: 250px;
     border: 6px dotted var(--dv-orange);
@@ -853,7 +857,7 @@ caption{
     select the third div in the border styling section using the ID, descendant, and class name selectors
 */
 /* ----- */
-#border-styling .third-div{
+#borders .dashed {
     width: 200px;
     height: 200px;
     border: 6px dashed var(--dv-yellow);
@@ -865,7 +869,7 @@ caption{
     select the fourth div in the pseudo-class styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#pseudo-class-styling div .fourth-div{
+#borders .fourth-div {
     width: 150px;
     height: 150px;
     border: 6px double var(--dv-mint);
@@ -877,7 +881,7 @@ caption{
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#more-styling div.last-div{
+#borders .last-div{
     width: 100px;
     height: 100px;
     border: 6px inset var(--dv-lt-blue);
@@ -937,7 +941,7 @@ caption{
     select the image in the pseudo-elements section using the ID, child/descendant, and tag name selectors
 */
 /* ----- */
-#pseudo-elements img{
+#pseudo-elements img {
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -955,7 +959,7 @@ caption{
     select the footer element by tag name
 */
 /* ----- */
-footer{
+footer {
     margin: 2rem auto 0 auto;
     text-align: center;
 }
